@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Bundle Deals</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body> 
+    <!-- Wrap Container -->
+  <div class="wrap">
+    <div class="promo-banner">
+      <span></span>
+      <p>Smart Bundle Deals</p>
+      <span></span>
+    </div>
+
+    <!-- Deal Option 1 -->
+    <div class="deal-card" onclick="handleSelection(1)">
+      <div class="deal-header">
+        <input type="radio" name="dealOption" />
+        <div class="deal-info">
+          <h3>
+            <span class="deal-label">Single Set</span>
+            <span class="deal-price">DKK 195.00</span>
+          </h3>
+          <span class="deal-tag">Save 50%</span>
+        </div>
+      </div>
+      <div class="variant-options">
+        <label>Choose Options</label>
+        <div class="variant-row">
+          <label>Item 1:</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Red</option><option>Blue</option></select>
+        </div>
+        <div class="variant-row">
+          <label>Item 2:</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Red</option><option>Blue</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deal Option 2 -->
+    <div class="deal-card" onclick="handleSelection(2)">
+      <div class="deal-header">
+        <input type="radio" name="dealOption" />
+        <div class="deal-info">
+          <h3>
+            <span class="deal-label">Double Pack</span>
+            <span class="deal-price">DKK 345.00</span>
+          </h3>
+          <div class="deal-badges">
+            <span class="highlight-badge">Top Pick</span>
+            <span class="deal-tag">Save 40%</span>
+          </div>
+        </div>
+      </div>
+      <div class="variant-options">
+        <label>Choose Options</label>
+        <div class="variant-row">
+          <label>Item 1:</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Red</option><option>Blue</option></select>
+        </div>
+        <div class="variant-row">
+          <label>Item 2:</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Red</option><option>Blue</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deal Option 3 -->
+    <div class="deal-card" onclick="handleSelection(3)">
+      <div class="deal-header">
+        <input type="radio" name="dealOption" />
+        <div class="deal-info">
+          <h3>
+            <span class="deal-label">Triple Combo</span>
+            <span class="deal-price">DKK 528.00</span>
+          </h3>
+          <span class="deal-tag">Save 60%</span>
+        </div>
+      </div>
+      <div class="variant-options">
+        <label>Choose Options</label>
+        <div class="variant-row">
+          <label>Item 1:</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Red</option><option>Blue</option></select>
+        </div>
+        <div class="variant-row">
+          <label>Item 2:</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Red</option><option>Blue</option></select>
+        </div>
+      </div>
+    </div> 
+
+    <!-- Summary Section -->
+
+    <div class="summary">
+      <h5>Express 2-Day Delivery Included</h5>
+      <h4>Total: DKK 360.00</h4>
+    </div> 
+
+    <!-- Button -->
+
+    <button class="btn-cart">Add to Cart</button>
+  </div>  
+
+  <!-- Attach Javasript -->
+
+  <script src="index.js"></script>
+</body>
+
+</html>
